@@ -40,7 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
               child: ListTile(
                 leading: Icon(Icons.image),
                 title: Text(tumSultanlar[index]["ad"]),
-                subtitle: Text("bilgi"),
+                subtitle: Text(tumSultanlar[index]["padisahlikDönemi"]),
               ),
             );
           },
@@ -58,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
       var gelenJson=await DefaultAssetBundle.of(context).loadString("assets/data/sultanlar.json");
 
-      debugPrint(gelenJson);
+    
 
       List sultanlarListesi=json.decode(gelenJson.toString());
 
