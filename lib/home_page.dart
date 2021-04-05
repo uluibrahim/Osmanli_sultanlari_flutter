@@ -33,7 +33,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 itemBuilder: (context, index) {
                   return Card(
                     elevation: 10,
-                    color: Colors.teal.shade200,
                     margin: EdgeInsets.all(9),
                     child: ListTile(
                       onTap: () {
@@ -47,6 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                         );
                       },
+                      tileColor: Colors.teal.shade200,
                       leading: Image.network(
                         "${tumSultanlar[index]["photo"]}",
                         height: 50,
